@@ -20,7 +20,7 @@ import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 export default function AppNav() {
   return (
     <nav
-      className={`h-14 sticky top-0 z-10 bg-zinc-50 dark:bg-zinc-900 flex-shrink-0`}
+      className={`h-14 sticky top-0 z-10 bg-zinc-50 dark:bg-zinc-900 shrink-0`}
     >
       <div
         className={`h-full w-full flex justify-between items-center px-4 max-w-[1000px] mx-auto`}
@@ -100,7 +100,7 @@ export default function AppNav() {
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    <FiGithub className='h-[1.2rem] w-[1.2rem] text-zinc-500 dark:text-zinc-400 hover:text-foreground hover:dark:text-foreground ' />
+                    <FiGithub className='h-[1.2rem] w-[1.2rem] text-zinc-500 dark:text-zinc-400 hover:text-foreground dark:hover:text-foreground ' />
                   </a>
 
                   <a
@@ -108,11 +108,11 @@ export default function AppNav() {
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    <FiLinkedin className='h-[1.2rem] w-[1.2rem] text-zinc-500 dark:text-zinc-400 hover:text-foreground hover:dark:text-foreground ' />
+                    <FiLinkedin className='h-[1.2rem] w-[1.2rem] text-zinc-500 dark:text-zinc-400 hover:text-foreground dark:hover:text-foreground ' />
                   </a>
 
                   <a href='mailto:sudeshkumardas7@gmail.com'>
-                    <FiMail className='h-[1.2rem] w-[1.2rem] text-zinc-500 dark:text-zinc-400 hover:text-foreground hover:dark:text-foreground ' />
+                    <FiMail className='h-[1.2rem] w-[1.2rem] text-zinc-500 dark:text-zinc-400 hover:text-foreground dark:hover:text-foreground ' />
                   </a>
                 </div>
               </SheetContent>
@@ -124,4 +124,4 @@ export default function AppNav() {
   );
 }
 
-// For transparent navbar - bg-opacity-60 dark:bg-opacity-60 backdrop-blur-sm
+// For transparent navbar - bg-opacity-60 dark:bg-opacity-60 backdrop-blur-xs
